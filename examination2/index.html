@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIVERSITY OF Pretoria</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+   <script
+      src="https://kit.fontawesome.com/c83da87583.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </head>
+  <!-- styling -->
+  <style>
+    body{
+    font-family: 'Roboto', sans-serif;
+   }
+   .levels{
+    background-color: rgb(223,245,223);
+   }
+   .list ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    text-align: center;
+   }
+   .levels1{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   li a::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background-color: coral;
+    margin: auto;
+    display: block;
+   }
+   li a:hover::after{
+    width:100%;
+    transition: width 0.3s linear;
+   }
+   .container-fluid{
+    cursor: pointer;
+   }
+   .container-fluid img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(.2);
+    transition: .3s;
+   }
+   .container-fluid img:hover{
+    filter:grayscale(0);
+    transform: scale(1.1)rotate(2deg);
+   }
+   .read{
+        animation-name: anime;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        /* animation-iteration-count: infinite; */
+      }
+      @keyframes anime{
+        0%{
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        
+        100%{
+          transform: translateX(0);
+          opacity: 0.5;
+        }
+      }
+      .photo{
+        /* width: 700px; */
+        display: flex;
+      }
+      .photo img{
+        width: 400px;
+        height: 250px;
+      }
+      .foot1{
+        background-color: rgba(0, 0, 255, 0.439);
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+      }
+      .social i{
+        display: flex;
+      }
+      .foot2{
+        background-color: rgba(0, 0, 255, 0.824);
+        color: white;
+      }
+
+      .java{
+        padding: 20px 30px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        font-weight: 500;
+        font-size: large;
+        box-shadow: 2px 5px 14px rgb(255,210,200);
+      }
+     .images1{
+      display: flex;
+      justify-content: space-evenly;
+     }
+     .images2{
+      margin-top: 190px;
+      display: flex;
+      justify-content: space-evenly;
+     }
+     .images3{
+      margin-top: 220px;
+      display: flex;
+      justify-content: space-evenly;
+     }
+     .write-up{
+        animation-name: anime;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        /* animation-iteration-count: infinite; */
+      }
+      @keyframes anime{
+        0%{
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        
+        100%{
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+    </style>
+
+  <body>
+    <div class="container-fluid">
+      <!-- navbar -->
+      <br>
+      <div style="position: static;" class="row">
+        <div class="col-2">
+          <img style="width: 150px" src="./pics/pictoria logo.webp" alt="" />
+        </div>
+        <div class="col-8">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="navbar-brand">
+                    <a class="nav-link active" aria-current="page" href="./index.html"
+                      >About UP</a
+                    >
+                  </li>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="navbar-brand">
+                    <a class="nav-link active" aria-current="page" href="./apply.html"
+                      >Apply</a
+                    >
+                  </li>
+                  <li class="navbar-brand">
+                    <a class="nav-link" href="./login.html">Login</a>
+                  </li>
+                  <!-- <li class="navbar-brand dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Study
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Fees and Funding</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Undergraduates</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Postgraduates</a
+                        >
+                      </li>
+                    </ul>
+                  </li> -->
+                  <li class="navbar-brand">
+                    <a class="nav-link" href="./contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-info" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      
+      <!-- header -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./pics/rotating-giving-matters-banner.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Help our Students Soar.Give today</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./pics/pictoria11.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Double win for the University of Pretoria</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./pics/pictoria12.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Upclimb 323rd position in the Latest Ranking</h3>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- main -->
+      <br><br>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 text-danger">
+          <h2>About Us</h2>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-1"></div>
+        <div style="background-color: rgba(128, 128, 128, 0.136);padding-top: 10px;border-radius: 5px;" class="col-10">
+          <p>University of Pretoria /About Us</p>
+        </div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row write-up">
+        <div class="col-1"></div>
+        <div class="col-10">
+        <p>The University of Pretoria (UP) is a seven-campus public university with its largest campus
+           in the heart of Hatfield,the picturesque diplomatic hub of South Africa’s capital city.
+            We’re proud to stand among the world’s leading research universities.
+             Nestled in the purple haze of Pretoria’s iconic jacaranda trees, UP offers a high quality
+              of teaching, learning and research expertise across all nine faculties, including 
+              South Africa’s only Faculty of Veterinary Science, and Africa’s top Faculty of Law and
+               business school. We firmly believe that our success is measured not only by what we have
+                already achieved, but how the actions we take today impact on our future and the future
+                 of the continent as a whole. Our characteristic resolve and focussed commitment have seen
+                  us transform into a dynamic community of some of the world’s brightest minds,
+                   working together across disciplines to discover knowledge and find solutions
+                    to some of society’s most pressing concerns. For us, UP is more than a university
+                     – it is a way of life that is underpinned by striving for excellence, giving back
+                      to society, and living a life that is ethical, understanding and caring towards
+                       everyone. Our graduates are critical and creative thinkers who are able to 
+                       function seamlessly in a professional work environment while maintaining a
+                        strong commitment to contributing to South Africa by being socially responsible
+                         and active citizens.</p>
+        </div>
+        <div class="col-1"></div>
+        
+      </div>
+
+      <div class="images1">
+        <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img1.webp" alt=""><div class="text-danger"><h3>Our Story</h3></div>
+          <p>The University of Pretoria (UP) was established in 1908 <br>
+             with just four professors and 32 students, in a little house
+             called Kya Rosa. Today, it is one of the largest research
+              universities in South Arica...<div><a href="">Read more</a></p></div></div>
+              <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img2.webp" alt=""><div class="text-danger"><h3>Teaching and Learning</h3></div>
+              <p> Our committed academics have multiple approaches to teaching to ensure that
+                   students with a variety of learning strengths
+                 succeed... <div><a href="">Read more</a></p></div></div>
+                 <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img3.jpg" alt=""><div class="text-danger"><h3>Management and Governance</h3></div>
+                 <p>UP is governed in terms of the Higher Education Act 101 <br>
+                   of 1997, as amended, and the Statute
+                   of the University... <div><a href="">Read more</a></p></div></div>         
+
+      </div>
+
+      <div class="images2">
+        <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img4.webp" alt=""><div class="text-danger"><h3>World Rankings</h3></div>
+          <p>UP is one of the world’s top universities and occupies a space in the top 1,9% of universities
+             in the world. We rank highly for Africa across several ranking measurement systems which take into consideration a range of factors... <div><a href="">Read more</a></p></div></div>
+              <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img5.webp" alt=""><div class="text-danger"><h3>Partners and Collaborations</h3></div>
+              <p>The University of Pretoria is proud to be associated with a number of research partnerships, academic development programmes
+                 and memoranda of understanding with many international universities and institutions... <div><a href="">Read more</a></p></div></div>
+                 <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img6.jpg" alt=""><div class="text-danger"><h3>Institutes, Centres and Units</h3></div>
+                 <p>At the University of Pretoria, we know that the actions we take today have a lasting impact on our future. We make today matter by being actively involved in cutting-edge
+                   research and technological development, having a positive economic impact and
+                    finding solutions... <div><a href="">Read more</a></p></div></div>         
+
+      </div>
+
+      <div class="images3">
+        <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img7.jpg" alt=""><div class="text-danger"><h3>Campuses</h3></div>
+          <p>UP has seven beautiful campuses, each with its own unique character and purpose. The faculties of Veterinary Science, Health Science,
+             and Education are customised to their purposes, self-contained on campuses at Onderstepoort... <div><a href="">Read more</a></p></div></div>
+              <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img8.webp" alt=""><div class="text-danger"><h3>Social Responsibility</h3></div>
+              <p>At UP we firmly believe that we are a resource and an asset to South Africa, Africa and the world. We take pride in our locally and globally relevant
+                 programmes which produce graduates who are socially conscious, active citizens... <div><a href="">Read more</a></p></div></div>
+                 <div style="width: 400px;height: 200px;"><img style="border-radius: 5px;" src="./pics/img9.jpg" alt=""><div class="text-danger"><h3>Faculties</h3></div>
+                 <p>We are one of the largest research universities in South Africa, with nine highly regarded faculties
+                   that span the knowledge spectrum from classic academic fields to rapidly evolving new fields of study.
+                    We are home to Africa’s best business school... <div><a href="">Read more</a></p></div></div>         
+
+      </div>
+
+      <br>
+      <div class="read" style="text-align: center;margin-top: 200px;">
+        <h2>Make Today Matter. Study at UP.</h2>
+        <h5>
+          The University of Pretoria (UP) is one of Africa’s top universities
+          and the largest contact university in South Africa. We produce <br>
+          socially impactful research to find solutions for the world’s most
+          pressing issues. We have a high quality of teaching and learning in <br>
+          the classroom, online, or in communities. We have support in place for
+          our students to graduate on time as well-rounded,<br> responsible citizens
+          fully prepared for the world beyond university.
+        </h5>
+      </div>
+      <div class="levels">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10 levels1">
+            <div>
+           <div class="text-danger"><h2>Undergraduates</h2></div>
+            <div><img  style="width: 500px;height: 300px;border-radius: 5px;" src="./pics/img2 pretorial.webp" alt=""></div>
+            <div class="list mt-2"><ul>
+              <div style="background-color: red;border-radius: 2px;margin-left:-30px;"><li>Programmes and <br> Degrees</li></div>
+              <div style="background-color: red;border-radius: 2px;margin-left: 35px;"><li>Apply</li></div>
+              <div style="background-color: red;margin-left: 35px;border-radius: 2px;"><li>Fees and Funding</li></div>
+              <div style="background-color: red;margin-left: 25px;border-radius: 2px;"><li>Student <br> Accomodation</li></div>
+            </ul></div>
+          </div>
+
+           <div>
+            <div class="text-primary"><h2>Postgraduates</h2></div>
+            <div><img  style="width: 500px;height: 300px;border-radius: 5px;" src="./pics/img pretorial.jpg" alt=""></div>
+            <div class="list mt-2"><ul>
+              <div style="background-color: blue;border-radius: 2px;margin-left:-30px;"><li>Programmes and <br> Degrees</li></div>
+              <div style="background-color:blue;border-radius: 2px;margin-left: 35px;"><li>Apply</li></div>
+              <div style="background-color:blue;margin-left: 35px;border-radius: 2px;"><li>Fees and Funding</li></div>
+              <div style="background-color:blue;margin-left: 25px;border-radius: 2px;"><li>Student <br> Accomodation</li></div>
+            </ul></div>
+          </div>
+
+          </div>
+          <div class="col-1"></div>
+        </div>
+        
+      </div>
+      <div style="text-align: center;"><h1>Research Matters</h1></div>
+      <br><br>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class=" col-10">
+          <div class="photo">
+          <div><img style="margin-left: 100px;border-radius: 5px;" src="./pics/crime-scene-thumbnail.zp237991.jpg" alt="">
+          <div class="crime mt-2 text-white" style="background-color: rgba(128, 128, 128, 0.677);margin-left: 100px;text-align: center;"><div><p>UP studies shows how police <br> community partnership can reduce crime <br> in high risk cities</p></div></div>
+          </div>
+          <div><img style="margin-left: 230px;border-radius: 5px;" src="./pics/research.webp" alt="">
+            <div class="crime mt-2 text-center" style="background-color: rgba(128, 128, 128, 0.677);margin-left: 230px;"><div><p>RESEARCH <br> ISSUE 5:IMPACT for UP <br> on global Scope</p></div></div></div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      
+      </div>
+        
+      <br><br>
+
+      <div class="text-danger text-center"><h5>More news research >></h5></div>
+
+      <br><br>
+
+
+       <!-- footer -->
+       <div class="foot1">
+      <div>
+        <p><b>Postal Address: </b></p><p>University of Pretoria <br> Private Bag x 20 <br>Hatfield <br>0028</p>
+          <br>
+          <p>Location: <br>GIBS | Groenkloof | Hatfield <br>
+Hillcrest | Mamelodi | Onderstepoort | Prinshof
+      </div>
+      <div>
+       <p><b>Student Service Centre (for Contact students):</b></p>
+<p>Contact Centre - Telephone: 012 420 3111 <br>
+Contact Centre - Email: ssc@up.ac.za</p>
+
+<p><b>UPOnline Call Centre (for Online Students):</b></p>
+<p>Call Centre - Email: enquiries@online.up.ac.za</p>
+      </div>
+
+      <div class="social">
+        <div><p><b>Get Social With Us</b></p>
+          facebook<i class="fa-brands fa-facebook"></i></div>
+          <div>twitter<i class="fa-brands fa-twitter"></i></div>
+          <div>youtube<i class="fa-brands fa-youtube"></i></div>
+      </div>
+      
+       </div>
+
+       <div class="foot2">
+        <div style="display: flex;justify-content: space-evenly;">
+  <div><p>Copyright © University of Pretoria 2023. All rights reserved.</p></div> 
+   <div><p>Careers@UP | Tenders@UP | Ethics Hotline | Privacy Notice | Disclaimer | Terms of use</p></div>
+    </div>
+
+    <div><hr></div>
+    <div class="text-center"><p>COVID-19 Corona Virus South African Resource Portal <br>
+      To contact the University during the COVID-19 lockdown, please send an email to ssc@up.ac.za</p></div>
+       </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c83da87583.js" crossorigin="anonymous"></script>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
+<!-- styling -->
+<style>
+   body{
+    background-color: coral;
+    font-family: 'Raleway', sans-serif;
+  }
+  form{
+      margin-top: 20vh;
+      justify-content: center;
+      margin: auto;
+      margin-left: 31%;
+      background-color: whitesmoke;
+      width: 35%;
+      height: 100vh;
+      border-radius: 40px;
+  }
+
+  button{
+      text-align: center;
+      font-size: 30px;
+      margin-left: 70px;
+      color: white;
+      background-color: #252222;
+      border-radius: 10px;
+  }
+  input{
+        width: 65%;
+        height: 3vh;
+        border-radius: 5px;
+    }
+    label{
+        font-size: 20px
+    }
+    @media only screen and (min-width:800px){
+    .container{
+      width: 50%;
+    }
+  }
+  li a::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background-color: coral;
+    margin: auto;
+    display: block;
+   }
+   li a:hover::after{
+    width:100%;
+    transition: width 0.3s linear;
+   }
+  </style>
+</head>
+<body>
+  <!-- coding -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><a style="text-decoration: none;" href="./index.html">About UP</a></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./apply.html"
+                >Apply</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"
+              aria-current="page"
+              href="./login.html"
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./contact.html"
+              >Contact Us</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  
+  <form>
+       
+      <div style="text-align: center; color: brown;">
+          <h1>Harvard University</h1>
+          <h3>Applicant Form</h3>
+      </div>
+  
+      <div style="margin-left: 25%;">
+          <label for="UserName">UserName*</label> <br>
+          <input id="write1" type="text"><br><br>
+  
+          <label for="SurName">SurName*</label><br>
+      <input id="write2" type="text"><br><br>
+  
+      <label  for="Other Names">Other Names*</label><br>
+      <input id="write3" name="moses" type="text"><br><br>
+  
+      <label  for="Phone">Phone*</label><br>
+      <input id="write4" type="text"><br><br>
+  
+      
+  
+      <label for="Email">Email*</label><br>
+          <input id="write5" type="text"><br><br>
+          <label for="PassWord">PassWord*</label><br>
+          <input id="write6" type="text"><br><br>
+      
+          <label  for="Confirm Password">Confirm Password*</label><br>
+          <input id="write7" name="moses" type="text"><br><br>
+      
+          <button onclick="showall()"class="btn bg-dark text-white">Submit</button>
+          </div>
+          </form>
+      
+          <script>
+              
+         function showall(){
+          let firstName = document.getElementById('write1').value;
+          let lastName = document.getElementById('write2').value;
+          let userName = document.getElementById('write3').value;
+          let passWord = document.getElementById('write4').value;
+         let Email = document.getElementById('write5').value;
+         let PassWord = document.getElementById('write6').value;
+         let ConfirmPassword = document.getElementById('write7').value;
+          alert(`${firstName} \n ${lastName} \n ${passWord} \n ${userName} \n ${Email} \n${PassWord} \n${ConfirmPassword}`);
+          alert('Details saved successfuly')
+        }
+ 
+</script>
+    
+</body>
+</html>
